@@ -4,7 +4,7 @@
 #
 Name     : paho.mqtt.c
 Version  : 1.3.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.0.tar.gz
 Source0  : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.0.tar.gz
 Summary  : MQTT C Client
@@ -19,6 +19,14 @@ BuildRequires : pkgconfig(openssl)
 
 %description
 The Paho MQTT C Client is a fully fledged MQTT client written in ANSI standard C.
+
+%package abi
+Summary: abi components for the paho.mqtt.c package.
+Group: Default
+
+%description abi
+abi components for the paho.mqtt.c package.
+
 
 %package bin
 Summary: bin components for the paho.mqtt.c package.
@@ -63,18 +71,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537991961
+export SOURCE_DATE_EPOCH=1542412025
 mkdir -p clr-build
 pushd clr-build
 %cmake .. -DPAHO_WITH_SSL=true \
 -DPAHO_BUILD_SAMPLES=false \
 -DPAHO_ENABLE_CPACK=false \
 -DPAHO_ENABLE_TESTING=true
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1537991961
+export SOURCE_DATE_EPOCH=1542412025
 rm -rf %{buildroot}
 pushd clr-build
 %make_install
@@ -82,6 +90,13 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files abi
+%defattr(-,root,root,-)
+/usr/share/abi/libpaho-mqtt3a.so.1.abi
+/usr/share/abi/libpaho-mqtt3as.so.1.abi
+/usr/share/abi/libpaho-mqtt3c.so.1.abi
+/usr/share/abi/libpaho-mqtt3cs.so.1.abi
 
 %files bin
 %defattr(-,root,root,-)
