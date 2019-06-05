@@ -4,7 +4,7 @@
 #
 Name     : paho.mqtt.c
 Version  : 1.3.0
-Release  : 4
+Release  : 5
 URL      : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.0.tar.gz
 Source0  : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.0.tar.gz
 Summary  : MQTT C Client
