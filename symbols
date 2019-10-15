@@ -46,8 +46,10 @@ libpaho-mqtt3a.so.1:MQTTAsync_getPendingTokens
 libpaho-mqtt3a.so.1:MQTTAsync_getVersionInfo
 libpaho-mqtt3a.so.1:MQTTAsync_global_init
 libpaho-mqtt3a.so.1:MQTTAsync_init
+libpaho-mqtt3a.so.1:MQTTAsync_init_rand
 libpaho-mqtt3a.so.1:MQTTAsync_isComplete
 libpaho-mqtt3a.so.1:MQTTAsync_isConnected
+libpaho-mqtt3a.so.1:MQTTAsync_randomJitter
 libpaho-mqtt3a.so.1:MQTTAsync_reconnect
 libpaho-mqtt3a.so.1:MQTTAsync_send
 libpaho-mqtt3a.so.1:MQTTAsync_sendMessage
@@ -338,8 +340,10 @@ libpaho-mqtt3as.so.1:MQTTAsync_getPendingTokens
 libpaho-mqtt3as.so.1:MQTTAsync_getVersionInfo
 libpaho-mqtt3as.so.1:MQTTAsync_global_init
 libpaho-mqtt3as.so.1:MQTTAsync_init
+libpaho-mqtt3as.so.1:MQTTAsync_init_rand
 libpaho-mqtt3as.so.1:MQTTAsync_isComplete
 libpaho-mqtt3as.so.1:MQTTAsync_isConnected
+libpaho-mqtt3as.so.1:MQTTAsync_randomJitter
 libpaho-mqtt3as.so.1:MQTTAsync_reconnect
 libpaho-mqtt3as.so.1:MQTTAsync_send
 libpaho-mqtt3as.so.1:MQTTAsync_sendMessage
