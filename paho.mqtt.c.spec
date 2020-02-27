@@ -4,7 +4,7 @@
 #
 Name     : paho.mqtt.c
 Version  : 1.3.1
-Release  : 6
+Release  : 7
 URL      : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.1/paho.mqtt.c-1.3.1.tar.gz
 Source0  : https://github.com/eclipse/paho.mqtt.c/archive/v1.3.1/paho.mqtt.c-1.3.1.tar.gz
 Summary  : MQTT C Client
@@ -15,7 +15,6 @@ Requires: paho.mqtt.c-lib = %{version}-%{release}
 BuildRequires : apache-ant
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-distutils3
-BuildRequires : buildreq-mvn
 BuildRequires : doxygen
 BuildRequires : pkgconfig(openssl)
 
@@ -52,13 +51,14 @@ lib components for the paho.mqtt.c package.
 
 %prep
 %setup -q -n paho.mqtt.c-1.3.1
+cd %{_builddir}/paho.mqtt.c-1.3.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571181949
+export SOURCE_DATE_EPOCH=1582842399
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -77,7 +77,7 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1571181949
+export SOURCE_DATE_EPOCH=1582842399
 rm -rf %{buildroot}
 pushd clr-build
 %make_install
