@@ -1,5 +1,5 @@
 PKG_NAME := paho.mqtt.c
-URL = https://github.com/eclipse/paho.mqtt.c/archive/v1.3.5/paho.mqtt.c-1.3.5.tar.gz
+URL = https://github.com/eclipse/paho.mqtt.c/archive/v1.3.6/paho.mqtt.c-1.3.6.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

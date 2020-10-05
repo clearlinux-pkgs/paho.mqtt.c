@@ -11,9 +11,12 @@ libpaho-mqtt3a.so.1:MQTTAsync_getVersionInfo
 libpaho-mqtt3a.so.1:MQTTAsync_global_init
 libpaho-mqtt3a.so.1:MQTTAsync_isComplete
 libpaho-mqtt3a.so.1:MQTTAsync_isConnected
+libpaho-mqtt3a.so.1:MQTTAsync_malloc
 libpaho-mqtt3a.so.1:MQTTAsync_reconnect
 libpaho-mqtt3a.so.1:MQTTAsync_send
 libpaho-mqtt3a.so.1:MQTTAsync_sendMessage
+libpaho-mqtt3a.so.1:MQTTAsync_setAfterPersistenceRead
+libpaho-mqtt3a.so.1:MQTTAsync_setBeforePersistenceWrite
 libpaho-mqtt3a.so.1:MQTTAsync_setCallbacks
 libpaho-mqtt3a.so.1:MQTTAsync_setConnected
 libpaho-mqtt3a.so.1:MQTTAsync_setConnectionLostCallback
@@ -22,6 +25,7 @@ libpaho-mqtt3a.so.1:MQTTAsync_setDisconnected
 libpaho-mqtt3a.so.1:MQTTAsync_setMessageArrivedCallback
 libpaho-mqtt3a.so.1:MQTTAsync_setTraceCallback
 libpaho-mqtt3a.so.1:MQTTAsync_setTraceLevel
+libpaho-mqtt3a.so.1:MQTTAsync_setUpdateConnectOptions
 libpaho-mqtt3a.so.1:MQTTAsync_strerror
 libpaho-mqtt3a.so.1:MQTTAsync_subscribe
 libpaho-mqtt3a.so.1:MQTTAsync_subscribeMany
@@ -58,9 +62,12 @@ libpaho-mqtt3as.so.1:MQTTAsync_getVersionInfo
 libpaho-mqtt3as.so.1:MQTTAsync_global_init
 libpaho-mqtt3as.so.1:MQTTAsync_isComplete
 libpaho-mqtt3as.so.1:MQTTAsync_isConnected
+libpaho-mqtt3as.so.1:MQTTAsync_malloc
 libpaho-mqtt3as.so.1:MQTTAsync_reconnect
 libpaho-mqtt3as.so.1:MQTTAsync_send
 libpaho-mqtt3as.so.1:MQTTAsync_sendMessage
+libpaho-mqtt3as.so.1:MQTTAsync_setAfterPersistenceRead
+libpaho-mqtt3as.so.1:MQTTAsync_setBeforePersistenceWrite
 libpaho-mqtt3as.so.1:MQTTAsync_setCallbacks
 libpaho-mqtt3as.so.1:MQTTAsync_setConnected
 libpaho-mqtt3as.so.1:MQTTAsync_setConnectionLostCallback
@@ -69,6 +76,7 @@ libpaho-mqtt3as.so.1:MQTTAsync_setDisconnected
 libpaho-mqtt3as.so.1:MQTTAsync_setMessageArrivedCallback
 libpaho-mqtt3as.so.1:MQTTAsync_setTraceCallback
 libpaho-mqtt3as.so.1:MQTTAsync_setTraceLevel
+libpaho-mqtt3as.so.1:MQTTAsync_setUpdateConnectOptions
 libpaho-mqtt3as.so.1:MQTTAsync_strerror
 libpaho-mqtt3as.so.1:MQTTAsync_subscribe
 libpaho-mqtt3as.so.1:MQTTAsync_subscribeMany
