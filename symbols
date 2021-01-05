@@ -120,6 +120,7 @@ libpaho-mqtt3c.so.1:MQTTClient_publishMessage
 libpaho-mqtt3c.so.1:MQTTClient_publishMessage5
 libpaho-mqtt3c.so.1:MQTTClient_receive
 libpaho-mqtt3c.so.1:MQTTClient_setCallbacks
+libpaho-mqtt3c.so.1:MQTTClient_setCommandTimeout
 libpaho-mqtt3c.so.1:MQTTClient_setDisconnected
 libpaho-mqtt3c.so.1:MQTTClient_setPublished
 libpaho-mqtt3c.so.1:MQTTClient_setTraceCallback
@@ -173,6 +174,7 @@ libpaho-mqtt3cs.so.1:MQTTClient_publishMessage
 libpaho-mqtt3cs.so.1:MQTTClient_publishMessage5
 libpaho-mqtt3cs.so.1:MQTTClient_receive
 libpaho-mqtt3cs.so.1:MQTTClient_setCallbacks
+libpaho-mqtt3cs.so.1:MQTTClient_setCommandTimeout
 libpaho-mqtt3cs.so.1:MQTTClient_setDisconnected
 libpaho-mqtt3cs.so.1:MQTTClient_setPublished
 libpaho-mqtt3cs.so.1:MQTTClient_setTraceCallback
